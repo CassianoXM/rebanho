@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RebanhoModelStoreContainer" CdmEntityContainer="RebanhoEntities1">
+    <EntitySetMapping Name="CADASTRO">
+      <EntityTypeMapping TypeName="RebanhoModel.CADASTRO">
+        <MappingFragment StoreEntitySet="CADASTRO">
+          <ScalarProperty Name="animal" ColumnName="animal" />
+          <ScalarProperty Name="dataNascimento" ColumnName="dataNascimento" />
+          <ScalarProperty Name="pai" ColumnName="pai" />
+          <ScalarProperty Name="mae" ColumnName="mae" />
+          <ScalarProperty Name="idade" ColumnName="idade" />
+          <ScalarProperty Name="producao" ColumnName="producao" />
+          <ScalarProperty Name="crias" ColumnName="crias" />
+          <ScalarProperty Name="ultimoParto" ColumnName="ultimoParto" />
+          <ScalarProperty Name="dataDescarte" ColumnName="dataDescarte" />
+          <ScalarProperty Name="motivoDescarte" ColumnName="motivoDescarte" />
+          <ScalarProperty Name="observaçao" ColumnName="observaçao" />
+          <ScalarProperty Name="raca" ColumnName="raca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COBERTURA">
+      <EntityTypeMapping TypeName="RebanhoModel.COBERTURA">
+        <MappingFragment StoreEntitySet="COBERTURA">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ultimoParto" ColumnName="ultimoParto" />
+          <ScalarProperty Name="cobertura1" ColumnName="cobertura" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="diasPosCobertura" ColumnName="diasPosCobertura" />
+          <ScalarProperty Name="toque" ColumnName="toque" />
+          <ScalarProperty Name="resultadoToque" ColumnName="resultadoToque" />
+          <ScalarProperty Name="previsaoParto" ColumnName="previsaoParto" />
+          <ScalarProperty Name="secar" ColumnName="secar" />
+          <ScalarProperty Name="animal" ColumnName="animal" />
+          <ScalarProperty Name="observacao" ColumnName="observacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIAGNOSTICO">
+      <EntityTypeMapping TypeName="RebanhoModel.DIAGNOSTICO">
+        <MappingFragment StoreEntitySet="DIAGNOSTICO">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="diagnoze" ColumnName="diagnoze" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MANEJO">
+      <EntityTypeMapping TypeName="RebanhoModel.MANEJO">
+        <MappingFragment StoreEntitySet="MANEJO">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="animal" ColumnName="animal" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="vacina" ColumnName="vacina" />
+          <ScalarProperty Name="banho" ColumnName="banho" />
+          <ScalarProperty Name="diagnostico" ColumnName="diagnostico" />
+          <ScalarProperty Name="tratamento" ColumnName="tratamento" />
+          <ScalarProperty Name="observacao" ColumnName="observacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ORDENHA">
+      <EntityTypeMapping TypeName="RebanhoModel.ORDENHA">
+        <MappingFragment StoreEntitySet="ORDENHA">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="animal" ColumnName="animal" />
+          <ScalarProperty Name="dataOrdenha" ColumnName="dataOrdenha" />
+          <ScalarProperty Name="leiteManha" ColumnName="leiteManha" />
+          <ScalarProperty Name="leiteTarde" ColumnName="leiteTarde" />
+          <ScalarProperty Name="leiteTotal" ColumnName="leiteTotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PARTO">
+      <EntityTypeMapping TypeName="RebanhoModel.PARTO">
+        <MappingFragment StoreEntitySet="PARTO">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="animal" ColumnName="animal" />
+          <ScalarProperty Name="dataParto" ColumnName="dataParto" />
+          <ScalarProperty Name="sexoCria" ColumnName="sexoCria" />
+          <ScalarProperty Name="observacao" ColumnName="observacao" />
+          <ScalarProperty Name="raca" ColumnName="raca" />
+          <ScalarProperty Name="pai" ColumnName="pai" />
+          <ScalarProperty Name="mae" ColumnName="mae" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PESAGEM">
+      <EntityTypeMapping TypeName="RebanhoModel.PESAGEM">
+        <MappingFragment StoreEntitySet="PESAGEM">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="animal" ColumnName="animal" />
+          <ScalarProperty Name="datapesagem" ColumnName="datapesagem" />
+          <ScalarProperty Name="peso" ColumnName="peso" />
+          <ScalarProperty Name="obsaervaçao" ColumnName="obsaervaçao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RACA">
+      <EntityTypeMapping TypeName="RebanhoModel.RACA">
+        <MappingFragment StoreEntitySet="RACA">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="raca1" ColumnName="raca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VACINA">
+      <EntityTypeMapping TypeName="RebanhoModel.VACINA">
+        <MappingFragment StoreEntitySet="VACINA">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="medicacao" ColumnName="medicacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

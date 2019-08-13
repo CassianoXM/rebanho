@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RebanhoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CADASTRO">
+    <Key>
+      <PropertyRef Name="animal" />
+    </Key>
+    <Property Name="animal" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="dataNascimento" Type="date" />
+    <Property Name="pai" Type="varchar" MaxLength="5" />
+    <Property Name="mae" Type="varchar" MaxLength="5" />
+    <Property Name="idade" Type="varchar" MaxLength="8" />
+    <Property Name="producao" Type="varchar" MaxLength="8" />
+    <Property Name="crias" Type="int" />
+    <Property Name="ultimoParto" Type="date" />
+    <Property Name="dataDescarte" Type="date" />
+    <Property Name="motivoDescarte" Type="varchar" MaxLength="50" />
+    <Property Name="observaçao" Type="varchar" MaxLength="50" />
+    <Property Name="raca" Type="int" />
+  </EntityType>
+  <EntityType Name="COBERTURA">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="ultimoParto" Type="date" />
+    <Property Name="cobertura" Type="date" />
+    <Property Name="del" Type="int" />
+    <Property Name="diasPosCobertura" Type="int" />
+    <Property Name="toque" Type="date" />
+    <Property Name="resultadoToque" Type="char" MaxLength="1" />
+    <Property Name="previsaoParto" Type="date" />
+    <Property Name="secar" Type="date" />
+    <Property Name="animal" Type="varchar" MaxLength="5" />
+    <Property Name="observacao" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DIAGNOSTICO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="diagnoze" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MANEJO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="animal" Type="varchar" MaxLength="5" />
+    <Property Name="data" Type="date" />
+    <Property Name="vacina" Type="int" />
+    <Property Name="banho" Type="varchar" MaxLength="50" />
+    <Property Name="diagnostico" Type="int" />
+    <Property Name="tratamento" Type="varchar" MaxLength="50" />
+    <Property Name="observacao" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ORDENHA">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="animal" Type="varchar" MaxLength="5" />
+    <Property Name="dataOrdenha" Type="date" />
+    <Property Name="leiteManha" Type="float" />
+    <Property Name="leiteTarde" Type="float" />
+    <Property Name="leiteTotal" Type="float" />
+  </EntityType>
+  <EntityType Name="PARTO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="animal" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="dataParto" Type="date" Nullable="false" />
+    <Property Name="sexoCria" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="observacao" Type="varchar" MaxLength="50" />
+    <Property Name="raca" Type="int" />
+    <Property Name="pai" Type="varchar" MaxLength="5" />
+    <Property Name="mae" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="PESAGEM">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="animal" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="datapesagem" Type="date" Nullable="false" />
+    <Property Name="peso" Type="float" Nullable="false" />
+    <Property Name="obsaervaçao" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="RACA">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="raca" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="VACINA">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="medicacao" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_CADASTRO_RACA">
+    <End Role="RACA" Type="Self.RACA" Multiplicity="0..1" />
+    <End Role="CADASTRO" Type="Self.CADASTRO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RACA">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CADASTRO">
+        <PropertyRef Name="raca" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COBERTURA_CADASTRO">
+    <End Role="CADASTRO" Type="Self.CADASTRO" Multiplicity="0..1" />
+    <End Role="COBERTURA" Type="Self.COBERTURA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CADASTRO">
+        <PropertyRef Name="animal" />
+      </Principal>
+      <Dependent Role="COBERTURA">
+        <PropertyRef Name="animal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MANEJO_CADASTRO">
+    <End Role="CADASTRO" Type="Self.CADASTRO" Multiplicity="0..1" />
+    <End Role="MANEJO" Type="Self.MANEJO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CADASTRO">
+        <PropertyRef Name="animal" />
+      </Principal>
+      <Dependent Role="MANEJO">
+        <PropertyRef Name="animal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MANEJO_DIAGNOSTICO">
+    <End Role="DIAGNOSTICO" Type="Self.DIAGNOSTICO" Multiplicity="0..1" />
+    <End Role="MANEJO" Type="Self.MANEJO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DIAGNOSTICO">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MANEJO">
+        <PropertyRef Name="diagnostico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MANEJO_Vacina">
+    <End Role="VACINA" Type="Self.VACINA" Multiplicity="0..1" />
+    <End Role="MANEJO" Type="Self.MANEJO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VACINA">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MANEJO">
+        <PropertyRef Name="vacina" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ORDENHA_CADASTRO">
+    <End Role="CADASTRO" Type="Self.CADASTRO" Multiplicity="0..1" />
+    <End Role="ORDENHA" Type="Self.ORDENHA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CADASTRO">
+        <PropertyRef Name="animal" />
+      </Principal>
+      <Dependent Role="ORDENHA">
+        <PropertyRef Name="animal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PARTO_CADASTRO">
+    <End Role="CADASTRO" Type="Self.CADASTRO" Multiplicity="1" />
+    <End Role="PARTO" Type="Self.PARTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CADASTRO">
+        <PropertyRef Name="animal" />
+      </Principal>
+      <Dependent Role="PARTO">
+        <PropertyRef Name="animal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PESAGEM_CADASTRO">
+    <End Role="CADASTRO" Type="Self.CADASTRO" Multiplicity="1" />
+    <End Role="PESAGEM" Type="Self.PESAGEM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CADASTRO">
+        <PropertyRef Name="animal" />
+      </Principal>
+      <Dependent Role="PESAGEM">
+        <PropertyRef Name="animal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="RebanhoModelStoreContainer">
+    <EntitySet Name="CADASTRO" EntityType="Self.CADASTRO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="COBERTURA" EntityType="Self.COBERTURA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DIAGNOSTICO" EntityType="Self.DIAGNOSTICO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MANEJO" EntityType="Self.MANEJO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ORDENHA" EntityType="Self.ORDENHA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PARTO" EntityType="Self.PARTO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PESAGEM" EntityType="Self.PESAGEM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RACA" EntityType="Self.RACA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VACINA" EntityType="Self.VACINA" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_CADASTRO_RACA" Association="Self.FK_CADASTRO_RACA">
+      <End Role="RACA" EntitySet="RACA" />
+      <End Role="CADASTRO" EntitySet="CADASTRO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COBERTURA_CADASTRO" Association="Self.FK_COBERTURA_CADASTRO">
+      <End Role="CADASTRO" EntitySet="CADASTRO" />
+      <End Role="COBERTURA" EntitySet="COBERTURA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MANEJO_CADASTRO" Association="Self.FK_MANEJO_CADASTRO">
+      <End Role="CADASTRO" EntitySet="CADASTRO" />
+      <End Role="MANEJO" EntitySet="MANEJO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MANEJO_DIAGNOSTICO" Association="Self.FK_MANEJO_DIAGNOSTICO">
+      <End Role="DIAGNOSTICO" EntitySet="DIAGNOSTICO" />
+      <End Role="MANEJO" EntitySet="MANEJO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MANEJO_Vacina" Association="Self.FK_MANEJO_Vacina">
+      <End Role="VACINA" EntitySet="VACINA" />
+      <End Role="MANEJO" EntitySet="MANEJO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ORDENHA_CADASTRO" Association="Self.FK_ORDENHA_CADASTRO">
+      <End Role="CADASTRO" EntitySet="CADASTRO" />
+      <End Role="ORDENHA" EntitySet="ORDENHA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PARTO_CADASTRO" Association="Self.FK_PARTO_CADASTRO">
+      <End Role="CADASTRO" EntitySet="CADASTRO" />
+      <End Role="PARTO" EntitySet="PARTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PESAGEM_CADASTRO" Association="Self.FK_PESAGEM_CADASTRO">
+      <End Role="CADASTRO" EntitySet="CADASTRO" />
+      <End Role="PESAGEM" EntitySet="PESAGEM" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

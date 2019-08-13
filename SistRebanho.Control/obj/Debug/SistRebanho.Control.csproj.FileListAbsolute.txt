@@ -1,0 +1,15 @@
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\bin\Debug\SistRebanho.Control.dll.config
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\bin\Debug\SistRebanho.Control.dll
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\bin\Debug\SistRebanho.Control.pdb
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\bin\Debug\EntityFramework.dll
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\bin\Debug\SistRebanho.Model.dll
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\bin\Debug\SistRebanho.Model.pdb
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\bin\Debug\SistRebanho.Model.dll.config
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\bin\Debug\EntityFramework.xml
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\obj\Debug\SistRebanho.Control.csprojAssemblyReference.cache
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\obj\Debug\SistRebanho.Control.csproj.CoreCompileInputs.cache
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\obj\Debug\SistRebanho.Control.csproj.CopyComplete
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\obj\Debug\SistRebanho.Control.dll
+C:\Users\cassi\source\repos\SistRebanho\SistRebanho.Control\obj\Debug\SistRebanho.Control.pdb
