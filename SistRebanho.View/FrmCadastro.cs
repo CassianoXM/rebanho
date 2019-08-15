@@ -16,10 +16,11 @@ namespace Rebanho
         {
             InitializeComponent();
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
-
+        }
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
 }
