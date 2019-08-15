@@ -41,6 +41,15 @@
             this.mnuParto = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuReçatorio = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rebanhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.raçaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.partoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.coberturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manejoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vacinaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.diagnosticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pesagemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +66,8 @@
             this.mnuCobertura,
             this.mnuParto,
             this.mnuReçatorio,
-            this.mnuSair});
+            this.mnuSair,
+            this.consultaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -81,27 +91,27 @@
             // mnuRebanho
             // 
             this.mnuRebanho.Name = "mnuRebanho";
-            this.mnuRebanho.Size = new System.Drawing.Size(171, 22);
+            this.mnuRebanho.Size = new System.Drawing.Size(180, 22);
             this.mnuRebanho.Text = "Rebanho";
             this.mnuRebanho.Click += new System.EventHandler(this.mnuRebanho_Click);
             // 
             // mnuVacina
             // 
             this.mnuVacina.Name = "mnuVacina";
-            this.mnuVacina.Size = new System.Drawing.Size(171, 22);
+            this.mnuVacina.Size = new System.Drawing.Size(180, 22);
             this.mnuVacina.Text = "Vacina";
             this.mnuVacina.Click += new System.EventHandler(this.mnuVacina_Click);
             // 
             // mnuDiagnostico
             // 
             this.mnuDiagnostico.Name = "mnuDiagnostico";
-            this.mnuDiagnostico.Size = new System.Drawing.Size(171, 22);
+            this.mnuDiagnostico.Size = new System.Drawing.Size(180, 22);
             this.mnuDiagnostico.Text = "Diagnostico";
             // 
             // mnuraça
             // 
             this.mnuraça.Name = "mnuraça";
-            this.mnuraça.Size = new System.Drawing.Size(171, 22);
+            this.mnuraça.Size = new System.Drawing.Size(180, 22);
             this.mnuraça.Text = "Raça";
             this.mnuraça.Click += new System.EventHandler(this.mnuraça_Click);
             // 
@@ -156,6 +166,69 @@
             this.mnuSair.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.mnuSair.Click += new System.EventHandler(this.mnuSair_Click);
             // 
+            // consultaToolStripMenuItem
+            // 
+            this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rebanhoToolStripMenuItem,
+            this.raçaToolStripMenuItem,
+            this.partoToolStripMenuItem,
+            this.coberturaToolStripMenuItem,
+            this.manejoToolStripMenuItem,
+            this.vacinaToolStripMenuItem,
+            this.diagnosticoToolStripMenuItem,
+            this.pesagemToolStripMenuItem});
+            this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(91, 22);
+            this.consultaToolStripMenuItem.Text = "Consulta";
+            // 
+            // rebanhoToolStripMenuItem
+            // 
+            this.rebanhoToolStripMenuItem.Name = "rebanhoToolStripMenuItem";
+            this.rebanhoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rebanhoToolStripMenuItem.Text = "Rebanho";
+            // 
+            // raçaToolStripMenuItem
+            // 
+            this.raçaToolStripMenuItem.Name = "raçaToolStripMenuItem";
+            this.raçaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.raçaToolStripMenuItem.Text = "Raça";
+            // 
+            // partoToolStripMenuItem
+            // 
+            this.partoToolStripMenuItem.Name = "partoToolStripMenuItem";
+            this.partoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.partoToolStripMenuItem.Text = "Parto";
+            // 
+            // coberturaToolStripMenuItem
+            // 
+            this.coberturaToolStripMenuItem.Name = "coberturaToolStripMenuItem";
+            this.coberturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.coberturaToolStripMenuItem.Text = "Cobertura";
+            // 
+            // manejoToolStripMenuItem
+            // 
+            this.manejoToolStripMenuItem.Name = "manejoToolStripMenuItem";
+            this.manejoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.manejoToolStripMenuItem.Text = "Manejo";
+            // 
+            // vacinaToolStripMenuItem
+            // 
+            this.vacinaToolStripMenuItem.Name = "vacinaToolStripMenuItem";
+            this.vacinaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.vacinaToolStripMenuItem.Text = "Vacina";
+            // 
+            // diagnosticoToolStripMenuItem
+            // 
+            this.diagnosticoToolStripMenuItem.Name = "diagnosticoToolStripMenuItem";
+            this.diagnosticoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.diagnosticoToolStripMenuItem.Text = "Diagnostico";
+            // 
+            // pesagemToolStripMenuItem
+            // 
+            this.pesagemToolStripMenuItem.Name = "pesagemToolStripMenuItem";
+            this.pesagemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pesagemToolStripMenuItem.Text = "Pesagem";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,5 +265,14 @@
         public System.Windows.Forms.ToolStripMenuItem mnuCobertura;
         public System.Windows.Forms.ToolStripMenuItem mnuManejo;
         public System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rebanhoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem raçaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem partoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem coberturaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manejoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vacinaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem diagnosticoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pesagemToolStripMenuItem;
     }
 }
