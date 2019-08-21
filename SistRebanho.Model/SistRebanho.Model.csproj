@@ -105,7 +105,6 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModelClasses.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="App.Config" />
     <None Include="ModelClasses.edmx.diagram">
       <DependentUpon>ModelClasses.edmx</DependentUpon>
     </None>
