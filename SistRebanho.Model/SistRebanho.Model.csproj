@@ -101,13 +101,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.Config">
-      <SubType>Designer</SubType>
-    </None>
     <EntityDeploy Include="ModelClasses.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModelClasses.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="App.Config" />
     <None Include="ModelClasses.edmx.diagram">
       <DependentUpon>ModelClasses.edmx</DependentUpon>
     </None>
