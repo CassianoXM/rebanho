@@ -19,6 +19,8 @@ namespace Rebanho
 
         private void FrmDiagnostico_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'rebanhoDataSet.DIAGNOSTICO'. Você pode movê-la ou removê-la conforme necessário.
+            this.dIAGNOSTICOTableAdapter.Fill(this.rebanhoDataSet.DIAGNOSTICO);
             // TODO: esta linha de código carrega dados na tabela 'rebanhoDiagnosticoDataBase.DIAGNOSTICO'. Você pode movê-la ou removê-la conforme necessário.
 
         }

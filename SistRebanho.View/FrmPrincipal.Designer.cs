@@ -60,14 +60,14 @@
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroToolStripMenuItem,
+            this.consultaToolStripMenuItem,
             this.mnuManejo,
             this.mnuPesagem,
             this.mnuOrdenha,
             this.mnuCobertura,
             this.mnuParto,
             this.mnuReçatorio,
-            this.mnuSair,
-            this.consultaToolStripMenuItem});
+            this.mnuSair});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 3, 0, 3);
@@ -84,7 +84,7 @@
             this.mnuDiagnostico,
             this.mnuraça});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(85, 22);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             this.cadastroToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
@@ -119,7 +119,7 @@
             // mnuManejo
             // 
             this.mnuManejo.Name = "mnuManejo";
-            this.mnuManejo.Size = new System.Drawing.Size(77, 22);
+            this.mnuManejo.Size = new System.Drawing.Size(71, 22);
             this.mnuManejo.Text = "Manejo";
             this.mnuManejo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.mnuManejo.Click += new System.EventHandler(this.mnuManejo_Click);
@@ -127,21 +127,21 @@
             // mnuPesagem
             // 
             this.mnuPesagem.Name = "mnuPesagem";
-            this.mnuPesagem.Size = new System.Drawing.Size(94, 22);
+            this.mnuPesagem.Size = new System.Drawing.Size(88, 22);
             this.mnuPesagem.Text = "Pesagem";
             this.mnuPesagem.Click += new System.EventHandler(this.mnuPesagem_Click);
             // 
             // mnuOrdenha
             // 
             this.mnuOrdenha.Name = "mnuOrdenha";
-            this.mnuOrdenha.Size = new System.Drawing.Size(90, 22);
+            this.mnuOrdenha.Size = new System.Drawing.Size(80, 22);
             this.mnuOrdenha.Text = "Ordenha";
             this.mnuOrdenha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // mnuCobertura
             // 
             this.mnuCobertura.Name = "mnuCobertura";
-            this.mnuCobertura.Size = new System.Drawing.Size(102, 22);
+            this.mnuCobertura.Size = new System.Drawing.Size(90, 22);
             this.mnuCobertura.Text = "Cobertura";
             this.mnuCobertura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.mnuCobertura.Click += new System.EventHandler(this.mnuCobertura_Click);
@@ -149,20 +149,20 @@
             // mnuParto
             // 
             this.mnuParto.Name = "mnuParto";
-            this.mnuParto.Size = new System.Drawing.Size(64, 22);
+            this.mnuParto.Size = new System.Drawing.Size(58, 22);
             this.mnuParto.Text = "Parto";
             // 
             // mnuReçatorio
             // 
             this.mnuReçatorio.Name = "mnuReçatorio";
-            this.mnuReçatorio.Size = new System.Drawing.Size(93, 22);
+            this.mnuReçatorio.Size = new System.Drawing.Size(83, 22);
             this.mnuReçatorio.Text = "Relatorio";
             this.mnuReçatorio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // mnuSair
             // 
             this.mnuSair.Name = "mnuSair";
-            this.mnuSair.Size = new System.Drawing.Size(52, 22);
+            this.mnuSair.Size = new System.Drawing.Size(49, 22);
             this.mnuSair.Text = "Sair";
             this.mnuSair.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.mnuSair.Click += new System.EventHandler(this.mnuSair_Click);
@@ -179,7 +179,7 @@
             this.diagnosticoToolStripMenuItem,
             this.pesagemToolStripMenuItem});
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(91, 22);
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(81, 22);
             this.consultaToolStripMenuItem.Text = "Consulta";
             // 
             // rebanhoToolStripMenuItem
@@ -241,7 +241,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPrincipal";
             this.Text = "FrmPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

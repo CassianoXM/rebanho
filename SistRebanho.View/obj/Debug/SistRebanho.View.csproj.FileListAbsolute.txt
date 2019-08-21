@@ -26,7 +26,6 @@ C:\Users\cassi\source\repos\SistRebanho\SistRebanho.View\obj\Debug\SistRebanho.V
 C:\Users\cassi\source\repos\SistRebanho\SistRebanho.View\obj\Debug\SistRebanho.View.exe
 C:\Users\cassi\source\repos\SistRebanho\SistRebanho.View\obj\Debug\SistRebanho.View.pdb
 C:\GitHub\SistRebanho\SistRebanho.View\obj\Debug\SistRebanho.View.csprojAssemblyReference.cache
-C:\GitHub\SistRebanho\SistRebanho.View\obj\Debug\Rebanho.FrmCadastro.resources
 C:\GitHub\SistRebanho\SistRebanho.View\obj\Debug\Rebanho.FrmCobertura.resources
 C:\GitHub\SistRebanho\SistRebanho.View\obj\Debug\Rebanho.FrmDiagnostico.resources
 C:\GitHub\SistRebanho\SistRebanho.View\obj\Debug\Rebanho.FrmManejo.resources
@@ -52,3 +51,4 @@ C:\GitHub\SistRebanho\SistRebanho.View\bin\Debug\SistRebanho.Model.pdb
 C:\GitHub\SistRebanho\SistRebanho.View\bin\Debug\SistRebanho.Model.dll.config
 C:\GitHub\SistRebanho\SistRebanho.View\bin\Debug\EntityFramework.xml
 C:\GitHub\SistRebanho\SistRebanho.View\obj\Debug\SistRebanho.View.csproj.CopyComplete
+C:\GitHub\SistRebanho\SistRebanho.View\obj\Debug\SistRebanho.View.FrmRebanho.resources

@@ -29,6 +29,10 @@ namespace SistRebanho.View
 
         private void mnuRebanho_Click(object sender, EventArgs e)
         {
+            FrmRebanho oFrm = new FrmRebanho();
+            oFrm.MdiParent = this;
+            oFrm.Show();
+            mnuRebanho.Enabled = false;
         }
 
         private void mnuVacina_Click(object sender, EventArgs e)
