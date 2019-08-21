@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 
-namespace SistRebanho.Model.Partial
+namespace SistRebanho.Model
 {
     [MetadataType(typeof(MD_RACA))]
-    public partial class PRACA
+    public partial class RACA
     {
         internal class MD_RACA
         {

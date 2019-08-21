@@ -84,7 +84,7 @@
     <Compile Include="ORDENHA.cs">
       <DependentUpon>ModelClasses.tt</DependentUpon>
     </Compile>
-    <Compile Include="Partial\PRaca.cs" />
+    <Compile Include="Partial\Raca.cs" />
     <Compile Include="PARTO.cs">
       <DependentUpon>ModelClasses.tt</DependentUpon>
     </Compile>
@@ -101,11 +101,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <EntityDeploy Include="ModelClasses.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModelClasses.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="App.config" />
     <None Include="ModelClasses.edmx.diagram">
       <DependentUpon>ModelClasses.edmx</DependentUpon>
     </None>

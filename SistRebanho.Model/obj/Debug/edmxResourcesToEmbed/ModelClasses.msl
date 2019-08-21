@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="RebanhoModelStoreContainer" CdmEntityContainer="RebanhoEntities1">
+  <EntityContainerMapping StorageEntityContainer="RebanhoModelStoreContainer" CdmEntityContainer="RebanhoEntities">
     <EntitySetMapping Name="CADASTRO">
       <EntityTypeMapping TypeName="RebanhoModel.CADASTRO">
         <MappingFragment StoreEntitySet="CADASTRO">
@@ -24,7 +24,7 @@
         <MappingFragment StoreEntitySet="COBERTURA">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="ultimoParto" ColumnName="ultimoParto" />
-          <ScalarProperty Name="cobertura1" ColumnName="cobertura" />
+          <ScalarProperty Name="cobertura" ColumnName="cobertura" />
           <ScalarProperty Name="del" ColumnName="del" />
           <ScalarProperty Name="diasPosCobertura" ColumnName="diasPosCobertura" />
           <ScalarProperty Name="toque" ColumnName="toque" />
@@ -99,7 +99,7 @@
       <EntityTypeMapping TypeName="RebanhoModel.RACA">
         <MappingFragment StoreEntitySet="RACA">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="raca1" ColumnName="raca" />
+          <ScalarProperty Name="raca" ColumnName="raca" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

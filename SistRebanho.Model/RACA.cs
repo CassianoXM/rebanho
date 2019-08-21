@@ -21,7 +21,7 @@ namespace SistRebanho.Model
         }
     
         public int id { get; set; }
-        public string raca1 { get; set; }
+        public string raca { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CADASTRO> CADASTRO { get; set; }

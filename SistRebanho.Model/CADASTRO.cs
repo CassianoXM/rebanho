@@ -37,7 +37,7 @@ namespace SistRebanho.Model
         public string observaçao { get; set; }
         public Nullable<int> raca { get; set; }
     
-        public virtual RACA RACA1 { get; set; }
+        public virtual RACA RACA { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<COBERTURA> COBERTURA { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

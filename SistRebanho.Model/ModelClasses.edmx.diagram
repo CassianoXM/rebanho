@@ -4,16 +4,16 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="4ec45e95a50345a9ae6d4c957a02aedb" Name="Diagram1" ZoomLevel="89">
+      <Diagram DiagramId="349304eecdb743b68fafde05ea07b7f9" Name="Diagram1">
         <EntityTypeShape EntityType="RebanhoModel.CADASTRO" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="RebanhoModel.COBERTURA" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="RebanhoModel.DIAGNOSTICO" Width="1.5" PointX="10.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RebanhoModel.COBERTURA" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="RebanhoModel.DIAGNOSTICO" Width="1.5" PointX="6" PointY="8.375" IsExpanded="true" />
         <EntityTypeShape EntityType="RebanhoModel.MANEJO" Width="1.5" PointX="8.25" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="RebanhoModel.ORDENHA" Width="1.5" PointX="5.625" PointY="11.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="RebanhoModel.PARTO" Width="1.5" PointX="5.5" PointY="7.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="RebanhoModel.PESAGEM" Width="1.5" PointX="0.75" PointY="12.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="RebanhoModel.RACA" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="RebanhoModel.VACINA" Width="1.5" PointX="10.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RebanhoModel.ORDENHA" Width="1.5" PointX="5.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RebanhoModel.PARTO" Width="1.5" PointX="5.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="RebanhoModel.PESAGEM" Width="1.5" PointX="5.25" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RebanhoModel.RACA" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RebanhoModel.VACINA" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="RebanhoModel.FK_CADASTRO_RACA" ManuallyRouted="false" />
         <AssociationConnector Association="RebanhoModel.FK_COBERTURA_CADASTRO" ManuallyRouted="false" />
         <AssociationConnector Association="RebanhoModel.FK_MANEJO_CADASTRO" ManuallyRouted="false" />
