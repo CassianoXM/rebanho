@@ -7,7 +7,7 @@ using SistRebanho.Model;
 using SistRebanho.Model.Repositories;
 
 
-namespace Rebanho.Control
+namespace SistRebanho.Control
 {
     public class CRaca
     {

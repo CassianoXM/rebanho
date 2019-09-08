@@ -9,7 +9,7 @@ namespace SistRebanho.Model.Repositories
 {
     public class RepositorioRaca : IDisposable
     {
-        private RebanhoEntities1 odb;
+        private RebanhoEntities odb;
         private bool LiberaContexto = false;
         //private bool attach = false;
 
@@ -20,7 +20,7 @@ namespace SistRebanho.Model.Repositories
             LiberaContexto = true;
         }
 
-        public RepositorioRaca(RebanhoEntities1 obd)
+        public RepositorioRaca(RebanhoEntities obd)
         {
             obd = odb;
         }
@@ -28,11 +28,11 @@ namespace SistRebanho.Model.Repositories
         {
             if (Raca.Trim() == "")
             {
-                return (from p in odb.RACA orderby p.raca1 select p).ToList();
+                return (from p in odb.RACA orderby p.raca select p).ToList();
             }
             else
             {
-                return (from p in odb.RACA where p.raca1.Contains(Raca) select p).ToList();
+                return (from p in odb.RACA where p.raca.Contains(Raca) select p).ToList();
             }
         }
         // ok

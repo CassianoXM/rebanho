@@ -33,7 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,11 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmRebanho.cs">
+    <Compile Include="FrmCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRebanho.Designer.cs">
-      <DependentUpon>FrmRebanho.cs</DependentUpon>
+    <Compile Include="FrmCadastro.Designer.cs">
+      <DependentUpon>FrmCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCobertura.cs">
       <SubType>Form</SubType>
@@ -108,13 +115,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RebanhoDataSet.Designer.cs">
+    <Compile Include="RaçaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RebanhoDataSet.xsd</DependentUpon>
+      <DependentUpon>RaçaDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FrmRebanho.resx">
-      <DependentUpon>FrmRebanho.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCadastro.resx">
+      <DependentUpon>FrmCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCobertura.resx">
       <DependentUpon>FrmCobertura.cs</DependentUpon>
@@ -149,6 +156,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="App.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -158,20 +167,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="RebanhoDataSet.xsc">
-      <DependentUpon>RebanhoDataSet.xsd</DependentUpon>
+    <None Include="RaçaDataSet.xsc">
+      <DependentUpon>RaçaDataSet.xsd</DependentUpon>
     </None>
-    <None Include="RebanhoDataSet.xsd">
+    <None Include="RaçaDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>RebanhoDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>RaçaDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="RebanhoDataSet.xss">
-      <DependentUpon>RebanhoDataSet.xsd</DependentUpon>
+    <None Include="RaçaDataSet.xss">
+      <DependentUpon>RaçaDataSet.xsd</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SistRebanho.Control\SistRebanho.Control.csproj">

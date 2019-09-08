@@ -8,9 +8,9 @@ namespace SistRebanho.Model.Helper
 {
     public class Data
     {
-        public static RebanhoEntities1 getContexto()
+        public static RebanhoEntities getContexto()
         {
-            RebanhoEntities1 odb = new RebanhoEntities1(); // instancia a conexão com o Banco de dados
+            RebanhoEntities odb = new RebanhoEntities(); // instancia a conexão com o Banco de dados
             odb.Configuration.ProxyCreationEnabled = false; // desabilita o proxy
             return odb; // retorna a conexão com Banco de Dados
         }

@@ -13,10 +13,10 @@ namespace SistRebanho.Model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class RebanhoEntities1 : DbContext
+    public partial class RebanhoEntities : DbContext
     {
-        public RebanhoEntities1()
-            : base("name=RebanhoEntities1")
+        public RebanhoEntities()
+            : base("name=RebanhoEntities")
         {
         }
     

@@ -16,7 +16,7 @@ namespace SistRebanho.Model
     {
         public int id { get; set; }
         public Nullable<System.DateTime> ultimoParto { get; set; }
-        public Nullable<System.DateTime> cobertura1 { get; set; }
+        public Nullable<System.DateTime> cobertura { get; set; }
         public Nullable<int> del { get; set; }
         public Nullable<int> diasPosCobertura { get; set; }
         public Nullable<System.DateTime> toque { get; set; }
